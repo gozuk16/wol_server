@@ -16,7 +16,7 @@ def wol (macaddress) {
 }
 
 macaddress = params['mac']
-packet = wol(macaddress)
+wol(macaddress)
 
 println """
 <html>
