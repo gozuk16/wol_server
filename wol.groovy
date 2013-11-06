@@ -5,13 +5,16 @@
 @GrabExclude('org.eclipse.jetty.orbit:javax.servlet')
 @GrabConfig(systemClassLoader = true)
 
+/*
 import java.net.DatagramPacket
 import java.net.DatagramSocket
 import java.net.InetAddress
+*/
 import org.eclipse.jetty.server.*
 import org.eclipse.jetty.servlet.*
 import groovy.servlet.*
 
+/*
 def wol () {
     def macAddress = "AA:BB:CC:DD:EE:FF";
 
@@ -22,10 +25,10 @@ def wol () {
     def broadcastAddress = InetAddress.getByAddress([255, 255, 255, 255] as byte[])
     def packet = new DatagramPacket(magicPacket as byte[], magicPacket.size, broadcastAddress, 5555)
 
-    println packet
     //def socket = new DatagramSocket()
     //socket.send(packet)
 }
+*/
 
 def startJetty() {
     def server = new Server(9090)
@@ -39,4 +42,4 @@ def startJetty() {
 
 println "start wol-server"
 startJetty()
-wol()
+//wol()
