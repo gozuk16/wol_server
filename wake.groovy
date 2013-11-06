@@ -1,14 +1,6 @@
-//@Grab('org.eclipse.jetty.aggregate:jetty-all')
-//@Grab('javax.servlet:javax.servlet-api')
-//@GrabExclude('org.eclipse.jetty.orbit:javax.servlet')
-//@GrabConfig(systemClassLoader = true)
-
 import java.net.DatagramPacket
 import java.net.DatagramSocket
 import java.net.InetAddress
-//import org.eclipse.jetty.server.*
-//import org.eclipse.jetty.servlet.*
-//import groovy.servlet.*
 
 def wol (macaddress) {
 //    def macaddress = "AA:BB:CC:DD:EE:FF";
